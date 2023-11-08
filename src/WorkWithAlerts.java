@@ -1,16 +1,12 @@
-import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkWithAlerts {
     public static void main(String[] args){
         //Open the browser and get the desired Homepage
-        System.getProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://letcode.in/alert");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://letcode.in/alert");
         // Accept the Alert
         WebElement simpleAlertBox = driver.findElement(By.id("accept"));
         simpleAlertBox.click();

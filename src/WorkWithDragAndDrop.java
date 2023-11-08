@@ -7,9 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 public class WorkWithDragAndDrop {
     public static void main(String[] args) {
         //Open the Browser and go to the desired page
-        System.getProperty("webdriver.chrome.driver", "C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://letcode.in/dropable");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://letcode.in/dropable");
 
         //drag the box and drop it into the target Box
         WebElement dragFromBox = driver.findElement(By.id("draggable"));

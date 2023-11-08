@@ -8,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WorkWithTextBox {
     public static void main (String[] args){
         // open browser and go to the required link
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.leafground.com/input.xhtml");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://www.leafground.com/input.xhtml");
 
         // find the edit box and enter the data
        WebElement nameBox = driver.findElement(By.id("j_idt88:name"));

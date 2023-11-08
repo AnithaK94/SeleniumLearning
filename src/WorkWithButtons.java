@@ -1,17 +1,12 @@
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.w3c.dom.css.Rect;
 
 import java.util.List;
 
 public class WorkWithButtons {
     public static void main(String[] args){
         //open browser and go to the required link
-        System.getProperty("webdriver.chrome.drive","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.leafground.com/button.xhtml");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://www.leafground.com/button.xhtml");
 
         //Click and confirm the Title
         WebElement clickButton = driver.findElement(By.name("j_idt88:j_idt90"));

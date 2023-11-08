@@ -6,9 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WorkWithRadioButtons {
     public static void main (String[] args){
         // Open the browser and go the desired site
-        System.getProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://letcode.in/radio");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://letcode.in/radio");
 
         //Select any one
         WebElement selectOneButton = driver.findElement(By.id("yes"));

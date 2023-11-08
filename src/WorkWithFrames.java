@@ -6,9 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WorkWithFrames {
     public static void main(String[] args){
         //open the Browser and go to the desired page
-        System.getProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://letcode.in/frame");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://letcode.in/frame");
 
         //to switch control to frame
         driver.switchTo().frame(0); // can be searched using index.name.id.webelement)

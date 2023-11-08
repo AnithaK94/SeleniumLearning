@@ -6,9 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WorkWithToolTip {
     public static void main(String[] args){
         //Open the Browser and go to the desired page
-        System.getProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://jqueryui.com/tooltip/");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://jqueryui.com/tooltip/");
         // iframe - switch control over to the frame
         driver.switchTo().frame(0);
 

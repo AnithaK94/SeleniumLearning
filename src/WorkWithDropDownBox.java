@@ -9,9 +9,7 @@ import java.util.List;
 public class WorkWithDropDownBox {
     public static void main(String[] args){
         // Open browser and go to the desired webpage.
-        System.getProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.leafground.com/select.xhtml");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://www.leafground.com/select.xhtml");
 
         //Select Text using Index
         WebElement dropdowntool = driver.findElement(By.className("ui-selectonemenu"));

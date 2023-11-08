@@ -10,9 +10,7 @@ import java.util.List;
 public class WorkWithCheckBoxes {
     public static void main(String[] args){
         //Open the Browser and go the required page
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://letcode.in/radio");
+        WebDriver driver = DriverUtils.setDriverPathAndGetWebDriver("https://letcode.in/radio");
         //Find if the checkbox is selected?
         WebElement rememberMeSelect = driver.findElement(By.xpath("/html/body/app-root/app-radio-check/section[1]/div/div/div[1]/div/div/div[6]/label[2]/input"));
         boolean status = rememberMeSelect.isSelected();

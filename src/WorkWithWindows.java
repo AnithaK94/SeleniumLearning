@@ -91,5 +91,5 @@ public class WorkWithWindows {
     }
 }
 /* Set = gives random values getwindowHandles - class in linkedHashedTag
-*Set works based on the implementing class - hence iot  operates as Linked map
+*Set works based on the implementing class - hence it operates as Linked hash map
 *  */
