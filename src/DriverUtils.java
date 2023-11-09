@@ -4,8 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class DriverUtils {
 
     public static WebDriver setDriverPathAndGetWebDriver(String url) {
+        // Open the Browser
         System.getProperty("webdriver.chrome.driver", "C:\\Users\\kanna\\Downloads\\chromedriver-win64\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        // Go to the Desired Page
         driver.get(url);
         return driver;
     }
