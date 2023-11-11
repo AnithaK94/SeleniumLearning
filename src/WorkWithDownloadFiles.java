@@ -22,18 +22,18 @@ public class WorkWithDownloadFiles {
         File fileLocation = new File("C:\\Users\\kanna\\Downloads");
         File[] filesList = fileLocation.listFiles();
 
-        for (File filesCheck : filesList) {
+        for (File filesCheck :  filesList) {
             if (filesCheck.getName().contains("sample.xlxs")) {
                 System.out.println("The Excel File is Downloaded : " + filesCheck.getName());
-                filesCheck.delete();
+                //filesCheck.delete();
                 break;
             } else if (filesCheck.getName().contains("sample.pdf")) {
                 System.out.println("The PDF File is Downloaded : " + filesCheck.getName());
-                filesCheck.delete();
+               // filesCheck.delete();
                 break;
             } else if (filesCheck.getName().contains("sample.txt")) {
                 System.out.println("The Word File is Downloaded : " + filesCheck.getName());
-                filesCheck.delete();
+                //filesCheck.delete();
                 break;
             }
         }
