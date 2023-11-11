@@ -14,7 +14,7 @@ public class WorkWithUploadFiles {
         uploadButton.click();
        // uploadButton.sendKeys("\'C:\\Users\\kanna\\Downloads\\sample.xlsx\'");
 
-       String file = "\'C:\\Users\\kanna\\Downloads\\sample.xlsx\'" ;
+       String file = "C:\\Users\\kanna\\Downloads\\sample.xlsx" ;
        StringSelection selectFile = new StringSelection(file); // data transferrable
 
         // copy contents operation in windows - java operation
