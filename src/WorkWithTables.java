@@ -40,6 +40,7 @@ public class WorkWithTables {
             String columnContents = firstColumnContent.getText();
             System.out.println("The second column in the Table contains : " +columnContents );
         }
+
         // To sum all the values in the list
 
         int sum = 0;
