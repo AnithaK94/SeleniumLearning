@@ -21,6 +21,5 @@ public class Person {
         System.out.println("Height : " +height);
         System.out.println("Initial : " + initial);
 
-
     }
 }
