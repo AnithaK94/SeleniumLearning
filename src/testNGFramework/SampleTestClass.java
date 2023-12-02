@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class SampleTestClass {
 
 //    private static Logger logger = LoggerFactory.getLogger(SampleTestClass.class);
-    @Test
+    @Test// individual Test canm be run without the need for main method
     public void firstTestCase(){
         System.out.println("This is the first TestCase");
     }
