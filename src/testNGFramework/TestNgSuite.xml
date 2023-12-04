@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- This xml is to run all the Test Cases file ina single run -->
-<suite name ="TestSuite" verbose ="2">
+<suite name ="TestSuite" verbose ="2" parallel = "methods" thread-count = "2">
     <!--verbose is used to show each method indepth analysis - indicates the level of information to be given -->
     <test name="TestCases">
+        <!--<parameter name= "Name" value = "Anil"></parameter>--> <!--Name Attribute value is case sensitive ; used to upload in ALM-->
+        <!--<groups>
+            <run>
+                <include name = "Moto"></include>
+                <include name = "VIVO"></include>
+            </run>
+        </groups>-->
         <classes>
-            <class name = "testNGFramework.DependenciesManagement"> </class>
-            <!--press ctrl + hover over the class name, it will act as a link -->
+            <!--<class name = "testNGFramework.DependenciesManagement"> </class>
+            press ctrl + hover over the class name, it will act as a link
             <class name = "testNGFramework.PriorityAndSkipTestCase"> </class>
             <class name = "testNGFramework.SampleTestClass"> </class>
+            <class name="testNGFramework.GroupingTestCase"> </class>
+            <class name="testNGFramework.ParameterizationExample"></class>
+            <class name = "testNGFramework.ParallelTesting"></class>-->
+            <class name = "testNGFramework.AnnotationsHierarchy"></class>
         </classes>
     </test>
 </suite>
