@@ -11,7 +11,7 @@ public class SampleTestClass {
     public void firstTestCase(){
         System.out.println("This is the first TestCase");
     }
-    @Test
+    /*@Test
     public void secondTestCase(){
         System.out.println("This is the second TestCase");
     }
@@ -22,5 +22,5 @@ public class SampleTestClass {
     @Test
     public void fourthTestCase(){
         System.out.println("This is the fourth TestCase");
-    }
+    }*/
 }

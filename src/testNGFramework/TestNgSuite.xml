@@ -2,6 +2,10 @@
 <!-- This xml is to run all the Test Cases file ina single run -->
 <suite name ="TestSuite" verbose ="2" parallel = "methods" thread-count = "2">
     <!--verbose is used to show each method indepth analysis - indicates the level of information to be given -->
+    <listeners>
+        <listener class-name="testNGFramework.ListenerCase"></listener>
+    </listeners>
+
     <test name="TestCases">
         <!--<parameter name= "Name" value = "Anil"></parameter>--> <!--Name Attribute value is case sensitive ; used to upload in ALM-->
         <!--<groups>
@@ -18,7 +22,8 @@
             <class name="testNGFramework.GroupingTestCase"> </class>
             <class name="testNGFramework.ParameterizationExample"></class>
             <class name = "testNGFramework.ParallelTesting"></class>-->
-            <class name = "testNGFramework.AnnotationsHierarchy"></class>
+
+            <class name = "testNGFramework.SampleTestClass"> </class>
         </classes>
     </test>
 </suite>
