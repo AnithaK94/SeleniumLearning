@@ -32,7 +32,7 @@ public class Calculation {
 
     public static void main(String[] args) {
          /* Methods or functions are same - used for minimizing the repetition of code
-         Rules to write a method - method should write inside a class and not inside  main function
+        Rules to write a method - method should write inside a class and not inside  main function
         accessModifier returnType methodName(optional parameters) { action }
         To access the method inside the main function, need to create an object
         returnType should be at the end of the method

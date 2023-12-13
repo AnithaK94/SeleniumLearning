@@ -1,3 +1,5 @@
+package Selenium;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -68,7 +70,7 @@ public class WorkWithWindows {
         driver.switchTo().window(mainControl);
 
         // Task 2 -Open muiltple windows
-        //The control is over the current Main page, so, no need to write window handle
+        //The control is over the current Selenium.Main page, so, no need to write window handle
         // Click on multiple windows button
         WebElement multipleWindowOpenButton = driver.findElement(By.id("multi"));
         multipleWindowOpenButton.click(); // open page 1

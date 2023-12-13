@@ -35,6 +35,7 @@ public class Login {
         System.out.println("Column Count is :" +columnCount);
         // array declaration---> Excel values are taken as Arrays
         String[][] textData = new String[rowCount][columnCount]; // rowcount-1 --> represents header( data must be taken after headers)
+        //If Excel has any type of data Type, to store this, we can use Object[][]
         // For Loop
         for(int i =0; i<rowCount; i++){
             for(int j =0; j<columnCount; j++){

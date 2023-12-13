@@ -1,9 +1,10 @@
-import dev.failsafe.internal.util.Assert;
+package Selenium;
+
+import Selenium.DriverUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkWithTextBox {
     public static void main (String[] args){
