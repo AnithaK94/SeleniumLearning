@@ -23,6 +23,15 @@ public class WorkwithWaits {
         WebElement password = driver.findElement(By.name("password"));
         password.clear();
         password.sendKeys("Kalel@94");
+
+        //submit() - work only in form  - tries directly to submit the form.
+        //click() - enter function.
+        driver.findElement(By.xpath("/html/body/app-root/app-signin/div/div/div/div/form/div[3]/p")).submit();
+        // Check with a page which is not has form tag in its DOM -
+        driver.get("https://letcode.in/buttons");
+        driver.findElement(By.id("home")).submit(); // UnsupportedOperationException - work only on Forms.
+
+        // Close the Browser
         driver.quit();
     }
 }

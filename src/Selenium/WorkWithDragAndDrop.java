@@ -17,10 +17,11 @@ public class WorkWithDragAndDrop {
 
         Actions builder = new Actions(driver);
         builder.dragAndDrop(dragFromBox, dropToBox).perform();//short method
+
         //full method
         // builder.clickAndHold(dragFromBox).moveToElement(dropToBox).release(dropToBox).build().perform();
 
-        // Task - draggable =>only sorce present - target can be anywhere in the given frame
+        // Task - draggable =>only source present - target can be anywhere in the given frame
         driver.get("https://jqueryui.com/draggable/");
         // it is present inside a frame
         driver.switchTo().frame(0);
